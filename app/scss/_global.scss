@@ -125,7 +125,7 @@ li {
   font-size: 40px;
   line-height: 36px;
   span{
-    padding: 23px 57px 27px 17px;
+    padding: 21px 57px 23px 17px;
     background-color: $aqua;
     display: inline-block;
     margin-left: 19px;
@@ -154,9 +154,84 @@ li {
 }
 
 .surf,
-.travel{
+.holder{
   padding: 160px 0 120px;
 }
-.travel {
+.holder {
   padding-bottom: 270px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.quantity {
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  width: 25px;
+  height: 42px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
+}
+
+.star-list{
+  li{
+    display: inline-block;
+    & + li {
+      margin-left: -25px;
+    }
+  }
+  
 }
